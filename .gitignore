@@ -1,0 +1,16 @@
+*.iml
+.gradle
+local.properties
+.idea
+.DS_Store
+build
+captures
+.externalNativeBuild
+.cxx
+video_zhu.jks
+/lib-gaze-tracker/build
+/lib-gaze-tracker/lib-gaze-tracker-release.aar
+/lib-gaze-tracker/lib-gaze-tracker-release-2023-07-03.aar
+/app/build
+/app/.cxx
+release
