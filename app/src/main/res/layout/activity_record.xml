@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.RecordActivity">
+
+
+<!--    <androidx.camera.view.PreviewView-->
+<!--        android:id="@+id/view_finder"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@android:color/transparent" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/mask_preview_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="@android:color/white"-->
+    <!--        android:visibility="gone"/>-->
+
+
+    <ImageView
+        android:id="@+id/main_image2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/marker2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.example.gaze.record.widget.ScalerMoveView
+        android:id="@+id/circle_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/view_circle_shape"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_selector"
+        android:scaleType="fitCenter"
+        android:text="@string/img_record"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tip_tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="right"
+            android:text="############"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tip_tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="right"
+            android:text="############"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tip_tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="right"
+            android:text="############"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tip_tv_4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="right"
+            android:text="############"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/intro_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:src="@drawable/intro"
+        app:layout_constraintBottom_toBottomOf="@id/ll_layout"
+        app:layout_constraintLeft_toLeftOf="@id/ll_layout"
+        app:layout_constraintRight_toRightOf="@id/ll_layout"
+        app:layout_constraintTop_toTopOf="@id/ll_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

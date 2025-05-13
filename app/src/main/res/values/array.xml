@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="protocol">
+        <item>TCP</item>
+        <item>UDP</item>
+    </string-array>
+
+    <string-array name="protocol_value">
+        <item>tcp</item>
+        <item>udp</item>
+    </string-array>
+
+    <string-array name="aspect_ratio">
+        <item>4:3</item>
+        <item>16:9</item>
+    </string-array>
+
+    <string-array name="motion_type_value">
+        <item>FreeViewing</item>
+        <item>SmoothPursuit</item>
+        <item>HorizontalSinusoid</item>
+        <item>VerticalSinusoid</item>
+        <item>FixationStability</item>
+    </string-array>
+
+    <string-array name="motion_type_entries">
+        <item>Free Viewing</item>
+        <item>Smooth Pursuit</item>
+        <item>Horizontal Sinusoid</item>
+        <item>Vertical Sinusoid</item>
+        <item>Fixation Stability</item>
+    </string-array>
+
+    <integer name="port">50880</integer>
+    <integer name="debug_front_size">32</integer>
+    <integer name="resolution_width">480</integer>
+    <integer name="resolution_height">640</integer>
+</resources>

@@ -1,0 +1,3 @@
+include ':app'
+rootProject.name = "MobileEyeTrackingForDepression_V2"
+include ':lib-gaze-tracker'

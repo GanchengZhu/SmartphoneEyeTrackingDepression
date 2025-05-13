@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="Subject">
+        <EditTextPreference
+            app:defaultValue="ABC"
+            app:dialogTitle="ID"
+            app:key="user_id"
+            app:title="ID"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Eye Tracker Communication">
+        <ListPreference
+            app:defaultValue="udp"
+            app:dialogTitle="Data Protocol"
+            app:entries="@array/protocol"
+            app:entryValues="@array/protocol_value"
+            app:key="protocol"
+            app:summary="Data frame transmission protocol (UDP/TCP)"
+            app:title="Data Protocol"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="@integer/port"
+            app:dialogTitle="Port (0-65535)"
+            app:key="port"
+            app:summary="Port for data transmission"
+            app:title="Port"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Debugging">
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="debug_state"
+            app:title="Debug Mode"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="collect_upd_data"
+            app:title="Eye Tracker Data"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="ca_frame_state"
+            app:title="Face Bounding Box"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="preview_state"
+            app:title="Recording Preview"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="device_distance"
+            app:title="Detect Face Distance"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:key="is_portrait"
+            app:title="Portrait Mode"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="@integer/debug_front_size"
+            app:dialogTitle="Debug Info Font Size (integer)"
+            app:key="debug_front_size"
+            app:title="Debug Font Size"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Task Settings">
+        <ListPreference
+            app:defaultValue="FreeViewing"
+            app:dialogTitle="Marker Motion Type"
+            app:entries="@array/motion_type_entries"
+            app:entryValues="@array/motion_type_value"
+            app:key="motion_type"
+            app:title="Marker Motion Type"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="FreeViewing Parameters">
+        <EditTextPreference
+            app:defaultValue="4"
+            app:dialogTitle="Skip First N Frames"
+            app:key="frame_drop_free_viewing"
+            app:title="Skip First N Frames"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="3"
+            app:dialogTitle="Image Display Duration (seconds)"
+            app:key="picture_duration_free_viewing"
+            app:title="Image Duration (s)"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="0.5"
+            app:dialogTitle="Fixation Display Duration (seconds)"
+            app:key="fixation_duration_free_viewing"
+            app:title="Fixation Duration (s)"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Smooth Pursuit Parameters">
+        <EditTextPreference
+            app:defaultValue="4"
+            app:dialogTitle="Skip First N Frames"
+            app:key="frame_drop_smooth_pursuit"
+            app:title="Skip First N Frames"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:defaultValue="1/32"
+            app:dialogTitle="Frequency X"
+            app:key="freq_X_smooth_pursuit"
+            app:title="Frequency X"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="1/24"
+            app:dialogTitle="Frequency Y"
+            app:key="freq_Y_smooth_pursuit"
+            app:title="Frequency Y"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="0"
+            app:dialogTitle="Phase X"
+            app:key="phase_X_smooth_pursuit"
+            app:title="Phase X"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:defaultValue="0"
+            app:dialogTitle="Phase Y"
+            app:key="phase_Y_smooth_pursuit"
+            app:title="Phase Y"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:defaultValue="2.0"
+            app:dialogTitle="Preparation Interval (seconds)"
+            app:key="stay_interval_smooth_pursuit"
+            app:title="Pause Duration (s)"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Horizontal Sinusoid Parameters">
+        <EditTextPreference
+            app:defaultValue="4"
+            app:dialogTitle="Skip First N Frames"
+            app:key="frame_drop_horizontal_sinusoid"
+            app:title="Skip First N Frames"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:defaultValue="1/10"
+            app:dialogTitle="Frequency X"
+            app:key="freq_X_horizontal_sinusoid"
+            app:title="Frequency X"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="1/12"
+            app:dialogTitle="Frequency Y"
+            app:key="freq_Y_horizontal_sinusoid"
+            app:title="Frequency Y"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="3 * PI / 2"
+            app:dialogTitle="Phase X"
+            app:key="phase_X_horizontal_sinusoid"
+            app:title="Phase X"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="2.0"
+            app:dialogTitle="Preparation Interval (seconds)"
+            app:key="stay_interval_horizontal_sinusoid"
+            app:title="Pause Duration (s)"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Vertical Sinusoid Parameters">
+        <EditTextPreference
+            app:defaultValue="4"
+            app:dialogTitle="Skip First N Frames"
+            app:key="frame_drop_vertical_sinusoid"
+            app:title="Skip First N Frames"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:defaultValue="1/12"
+            app:dialogTitle="Frequency X"
+            app:key="freq_X_vertical_sinusoid"
+            app:title="Frequency X"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="1/10"
+            app:dialogTitle="Frequency Y"
+            app:key="freq_Y_vertical_sinusoid"
+            app:title="Frequency Y"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="0"
+            app:dialogTitle="Phase Y"
+            app:key="phase_Y_vertical_sinusoid"
+            app:title="Phase Y"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="2.0"
+            app:dialogTitle="Preparation Interval (seconds)"
+            app:key="stay_interval_vertical_sinusoid"
+            app:title="Pause Duration (s)"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Fixation Stability Parameters">
+        <EditTextPreference
+            app:defaultValue="4"
+            app:dialogTitle="Skip First N Frames"
+            app:key="frame_drop_fixation_stability"
+            app:title="Skip First N Frames"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="30"
+            app:dialogTitle="Distractor Stimulus Count"
+            app:key="random_count_fixation_stability"
+            app:title="Distractor Count"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="2.0"
+            app:dialogTitle="Preparation Interval (seconds)"
+            app:key="stay_interval_fixation_stability"
+            app:title="Pause Duration (s)"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ImageTestActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#aa111222" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:textColor="@color/white"
+        android:id="@+id/test_image"
+        android:background="@drawable/button_selector"
+        android:layout_alignParentTop="false"
+        android:layout_weight="1"
+        android:layout_marginTop="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="50dp"
+        android:gravity="start"
+        android:text="result"
+        android:textSize="10sp" />
+
+</RelativeLayout>

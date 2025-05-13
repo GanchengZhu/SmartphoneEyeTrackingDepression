@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GAZE DEPRESSION</string>
+    <string name="ok_next">OK, NEXT</string>
+    <string name="enter_record">Continue</string>
+    <string name="img_record">Begin to record</string>
+    <string name="setting_next">Next</string>
+
+</resources>
