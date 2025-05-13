@@ -21,7 +21,7 @@ I hope this message finds you well.
 
 My name is [Your Name], and I am a [student/researcher] at [Your Affiliation]. I am writing to request the Smartphone Eye Tracking SDK.
 
-I assure you that I will use this model solely for academic and research purposes and will not utilize it for commercial activities or share it with others.
+I assure you that I will use this SDK solely for academic and research purposes and will not utilize it for commercial activities or share it with others.
 
 Thank you for considering my request. I look forward to receiving access to the SDK.
 
