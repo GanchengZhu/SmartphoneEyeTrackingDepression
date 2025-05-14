@@ -37,6 +37,7 @@ git clone https://github.com/GanchengZhu/SmartphoneEyeTrackingDepression
 cd SmartphoneEyeTrackingDepression
 mv {sdk folder}/lib-gaze-tracker-release.aar ./lib-gaze-tracker
 ```
+The SDK Documentation please refers to [this page](https://github.com/GanchengZhu/eye_tracking_data_quality_analysis/).
 
 ## Software Preparation
 
