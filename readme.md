@@ -76,3 +76,12 @@ enter a cognitive task (you chose at step 1).
 - 4. Complete the task and all data can be found `/sdcard/Android/data/com.example.gaze.record`. For Android 11, you could not be allowed to access this folder. Please grant shell permission to [MTManager](https://mt2.cn/) by
      installing [Shizuku](https://shizuku.rikka.app/) and activating it. 
 
+## Data Analysis
+
+### Eye movement event detection
+
+Python script is [here](data_analysis/eye_events_detection.py)
+
+### Feature extraction for machine learning
+
+Python script is [here](data_analysis/extract_features_complex.py)
